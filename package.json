@@ -1,7 +1,7 @@
 {
   "name": "gulp-pipe",
   "version": "1.0.1",
-  "description": "Expose your flows without laying so much `.pipe`.",
+  "description": "Expose your flows without laying so much `.pipe()`.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"

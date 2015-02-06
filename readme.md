@@ -1,6 +1,6 @@
-#gulp-pipe
+# gulp-pipe
 
-####Expose your flows without laying so much `.pipe()`
+#### Expose your flows without laying so much `.pipe()`
 
 Get rid of needless boilerplate noise and just focus on the *stuff that changes*.
 
@@ -11,7 +11,7 @@ return gulp.src(paths.scripts)
            .pipe(to5())
            .pipe(concat('index.js'))
            .pipe(sourcemaps.write('.'))
-           .pipe(gulp.dest('dist'))
+           .pipe(gulp.dest(paths.dist))
            .on('error', function(e) { console.log(e); });
 ````
 
@@ -23,7 +23,7 @@ return pipe([
         ,to5()
         ,concat('index.js')
         ,sourcemaps.write('.')
-        ,gulp.dest('dist')
+        ,gulp.dest(paths.dist)
        ])
        .on('error', function(e) { console.log(e); });
 ````
@@ -36,13 +36,13 @@ return pipe(gulp.src(paths.scripts),
               to5(),
               concat('index.js'),
               sourcemaps.write('.'),
-              gulp.dest('dist')
+              gulp.dest(paths.dist)
             ])
-            .on('error', function(e) {console.log('!!!!', e);});
+            .on('error', function(e) {console.log(e);});
 ````
 
 
-###[Source](/index.js):
+### [Source](/index.js):
 
 ````javascript
 module.exports = function pipe(stream, tubes) {
@@ -51,13 +51,13 @@ module.exports = function pipe(stream, tubes) {
 };
 ````
 
-###Installation
+### Installation
 `npm install --save gulp-pipe`
 
-###Under consideration
+### Under consideration
 
 1. Investigate flows for allowing inline `.on`, as in [this example](https://github.com/greypants/gulp-starter/blob/1466eee867271271d91d7f837a1291c40e139fa3/gulp/tasks/browserify.js).
 
-###Notes
+### Notes
 
 1. This library is not specific to, nor has dependencies on, [gulp](https://github.com/gulpjs/gulp). It will work for any Streams, however it was created to simplify my `gulpfile.js`'s
