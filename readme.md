@@ -30,19 +30,6 @@ return pipe([
 
 Or this:
 ````javascript
-return pipe([
-        gulp.src(paths.scripts),
-        sourcemaps.init(),
-        to5(),
-        concat('index.js'),
-        sourcemaps.write('.'),
-        gulp.dest('dist')
-       ])
-       .on('error', function(e) { console.log(e); });
-````
-
-Or this:
-````javascript
 return pipe(gulp.src(paths.scripts),
             [
               sourcemaps.init(),
