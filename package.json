@@ -1,0 +1,26 @@
+{
+  "name": "gulp-pipe",
+  "version": "1.0.0",
+  "description": "Expose your flows without laying so much `.pipe`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blakelapierre/gulp-pipe"
+  },
+  "keywords": [
+    "gulp",
+    "pipe",
+    "streams",
+    "build",
+    "simplify"
+  ],
+  "author": "Blake La Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakelapierre/gulp-pipe/issues"
+  },
+  "homepage": "https://github.com/blakelapierre/gulp-pipe"
+}
