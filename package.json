@@ -1,6 +1,6 @@
 {
   "name": "gulp-pipe",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Expose your flows without laying so much `.pipe()`.",
   "main": "index.js",
   "scripts": {
