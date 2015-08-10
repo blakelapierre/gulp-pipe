@@ -16,7 +16,8 @@
     "streams",
     "build",
     "simplify",
-    "gulpfriendly"
+    "gulpfriendly",
+    "gulpplugin"
   ],
   "author": "Blake La Pierre",
   "license": "MIT",
